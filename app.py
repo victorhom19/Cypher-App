@@ -52,3 +52,15 @@ async def get_vernam_cypher(type, plaintext, key=None):
 			print(f"{int(char_code)} ^ {alphabet.index(key[i])} = {int(char_code) ^ alphabet.index(key[i])}")
 			result_string += alphabet[int(char_code) ^ alphabet.index(key[i])]
 		return result_string
+
+
+@app.get("/substitution-cypher/{type}")
+async def get_substitution_cypher(type, plaintext, key_alphabet):
+	result_string = ''
+	if type == 'encrypt':
+		for i, char in enumerate(plaintext):
+			result_string += key_alphabet[alphabet.index(char)]
+	if type == 'decrypt':
+		for i, char in enumerate(plaintext):
+			result_string += alphabet[key_alphabet.index(char)]
+	return result_string
