@@ -1,4 +1,9 @@
 # Cypher-App
+Main: [![Tests Status](https://github.com/victorhom19/Cypher-App/actions/workflows/test-pipeline.yml/badge.svg?branch=main)](https://github.com/victorhom19/Cypher-App/actions/workflows/test-pipeline.yml)
+
+Develop: [![Tests Status](https://github.com/victorhom19/Cypher-App/actions/workflows/test-pipeline.yml/badge.svg?branch=develop)](https://github.com/victorhom19/Cypher-App/actions/workflows/test-pipeline.yml)
+
+
 Сервис, позволяющий зашифровать и расшифровать текстовую последовательность при помощи нескольких алгоритмов шифрования.
 
 Доступные алгоритмы шифрования:
